@@ -1,0 +1,73 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main-color-black: #000;
+    --main-color-white: #FFF;
+    --main-color-primary-light: #81f4fc;
+    --main-color-primary: #56f5ff;
+    --main-color-primary-dark: #2b7b80;
+    background: var(--main-color-black)
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Merriweather', serif;
+}
+
+#landing-page{
+    background: var(--main-color-black);
+    color: var(--main-color-white);
+    height: 100vh;
+}
+
+#content{
+    display: grid;
+    place-items: center;
+    height: 75%;
+}
+
+.content-header{
+    text-align: center;
+}
+.content-line{
+    width: 40%;
+    color: var(--main-color-primary-light);
+    margin: 1rem auto;
+}
+.content-lead{
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 18px;
+    width: 40%;
+}
+
+.lunco-text-primary{
+    color: var(--main-color-primary)
+}
+.lunco-text-primary-light{
+    color: var(--main-color-primary-light)
+}
+.lunco-text-primary-dark{
+    color: var(--main-color-primary-dark)
+}
+.lunco-btn-primary{
+    border: 2px solid var(--main-color-primary);
+    border-radius: 5px;
+    color: var(--main-color-primary);
+    padding: 0.5rem 3rem;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+}
+.lunco-btn-primary:hover{
+    border: 2px solid var(--main-color-primary-dark);
+    color: var(--main-color-primary-dark);
+}
+
+@media screen and (max-width: 1000px) {
+    .content-lead{width:80%}
+  }
