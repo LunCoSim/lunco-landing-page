@@ -68,6 +68,22 @@ h1,h2,h3,h4,h5,h6{
     color: var(--main-color-primary-dark);
 }
 
+.icon-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.icon-link{
+    color: var(--main-color-white);
+    padding: 0.5rem;
+    font-size: 32px;
+}
+.icon-link :hover{
+    color: var(--main-color-primary-dark);
+    padding: 0.5rem;
+    font-size: 32px;
+}
+
 @media screen and (max-width: 1000px) {
     .content-lead{width:80%}
   }
