@@ -49,6 +49,9 @@ h1,h2,h3,h4,h5,h6{
 .lunco-text-primary{
     color: var(--main-color-primary)
 }
+a.lunco-text-primary:hover{
+    color: var(--main-color-primary-dark)
+}
 .lunco-text-primary-light{
     color: var(--main-color-primary-light)
 }
@@ -84,12 +87,12 @@ h1,h2,h3,h4,h5,h6{
 .icon-link{
     color: var(--main-color-white);
     padding: 0.5rem;
-    font-size: 32px;
+    font-size: 28px;
 }
 .icon-link:hover{
     color: var(--main-color-primary-dark);
     padding: 0.5rem;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 @media screen and (max-width: 1000px) {
