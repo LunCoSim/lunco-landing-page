@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6{
 #content{
     display: grid;
     place-items: center;
-    height: 75%;
+    height: 70%;
 }
 
 .content-header{
