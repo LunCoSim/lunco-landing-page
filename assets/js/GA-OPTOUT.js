@@ -20,4 +20,5 @@ function gaOptout() {
     document.cookie = '_gid=; path=/; domain='+ domainValue + '; expires=' + new Date(0).toUTCString();
     window[disableStr] = true;
     console.log("Google Analytics tracking has been disabled.")
+    window.alert("You have opted out of Google Analytics.")
 }
