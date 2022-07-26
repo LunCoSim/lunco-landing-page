@@ -29,6 +29,13 @@ h1,h2,h3,h4,h5,h6{
     height: 70%;
 }
 
+#donation {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
 .content-header{
     text-align: center;
     padding-left: 1rem;
@@ -97,6 +104,8 @@ a.lunco-text-primary:hover{
 }
 
 @media screen and (max-width: 1000px) {
+    #donation{ width: 60%;}
+    #donation a{ margin: 1rem;}
     .content-lead{width:80%}
     .content-header{font-size: 22px !important;}
     .content-lead{font-size: 16px !important;}
