@@ -17,6 +17,10 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Merriweather', serif;
 }
 
+nav{
+    z-index: 3;
+}
+
 #landing-page{
     background: var(--main-color-black);
     color: var(--main-color-white);
@@ -27,6 +31,15 @@ h1,h2,h3,h4,h5,h6{
     display: grid;
     place-items: center;
     height: 70%;
+    position: relative;
+    z-index: 3;
+}
+
+#donation {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
 }
 
 .content-header{
@@ -75,6 +88,7 @@ a.lunco-text-primary:hover{
 }
 .footer {
     position: fixed;
+    z-index: 3;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -96,7 +110,57 @@ a.lunco-text-primary:hover{
     font-size: 28px;
 }
 
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+/*
+
+Starry Night 
+
+https://www.youtube.com/watch?v=0t6Dmp70kTw
+https://github.com/Carla-Codes/starry-night-css-animation 
+
+*/
+
+.stars {
+  background:#000 url(../images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(../images/twinkling.png) repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(../images/clouds.png) repeat top center;
+    z-index:2;
+    opacity: .15;
+    animation:move-clouds-back 200s linear infinite;
+}
+
 @media screen and (max-width: 1000px) {
+    #donation{ width: 60%;}
+    #donation a{ margin: 1rem;}
     .content-lead{width:80%}
     .content-header{font-size: 22px !important;}
     .content-lead{font-size: 16px !important;}
