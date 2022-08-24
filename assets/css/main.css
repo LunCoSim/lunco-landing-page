@@ -27,25 +27,31 @@ nav{
     height: 100vh;
 }
 
+#logo{
+    height: 85px;
+}
+
 #content{
     display: grid;
     place-items: center;
-    height: 70%;
+    height: 90%;
     position: relative;
     z-index: 3;
 }
 
 #donation {
-    display: flex;
-    flex-direction: row;
     width: 50%;
-    justify-content: space-evenly;
+    margin: auto;
+    text-align: center;
+}
+
+.footer{
+    z-index: 3;
 }
 
 .content-header{
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 1rem;
     font-size: 40px;
 }
 .content-line{
@@ -73,6 +79,7 @@ a.lunco-text-primary:hover{
     color: var(--main-color-primary-dark)
 }
 .lunco-btn-primary{
+    display: inline-block;
     border: 2px solid var(--main-color-primary);
     border-radius: 5px;
     color: var(--main-color-primary);
@@ -87,10 +94,7 @@ a.lunco-text-primary:hover{
     color: var(--main-color-primary-dark);
 }
 .footer {
-    position: fixed;
     z-index: 3;
-    left: 0;
-    bottom: 0;
     width: 100%;
     text-align: center;
 }
@@ -159,10 +163,19 @@ https://github.com/Carla-Codes/starry-night-css-animation
 }
 
 @media screen and (max-width: 1000px) {
-    #donation{ width: 60%;}
-    #donation a{ margin: 1rem;}
+    #content{height: 75%;}
     .content-lead{width:80%}
-    .content-header{font-size: 22px !important;}
+    .content-line{display: none;}
+    .content-header{font-size: 20px !important;}
     .content-lead{font-size: 16px !important;}
     .icon-link{ font-size: 20px;}
+    #logo{height: 65px;}
+    .footer{font-size: 12px;}
+    .lunco-btn-primary{
+        border: 1px solid var(--main-color-primary);
+        border-radius: 5px;
+        color: var(--main-color-primary);
+        padding: 0.25rem 1.5rem;
+        font-size: 12px;
+    }
   }
