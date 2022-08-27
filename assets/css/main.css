@@ -164,7 +164,7 @@ https://github.com/Carla-Codes/starry-night-css-animation
 
 @media screen and (max-width: 1000px) {
     #content{height: 75%;}
-    .content-lead{width:80%}
+    .content-lead{width:80%; margin: 0.5rem auto;}
     .content-line{display: none;}
     .content-header{font-size: 20px !important;}
     .content-lead{font-size: 16px !important;}
